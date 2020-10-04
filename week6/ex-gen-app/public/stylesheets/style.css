@@ -1,0 +1,29 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+h1 {
+  color: black;
+}
+
+
+p {
+  font-size: 14pt;
+}
+table {
+  margin: 20px;
+}
+table tr th {
+  background-color: antiquewhite;
+  padding: 3px 10px;
+}
+table tr td {
+  background-color: bisque;
+}
+.error{
+  color: red;
+}

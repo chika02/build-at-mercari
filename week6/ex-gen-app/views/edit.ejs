@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title><%=title%></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+</head>
+<body> 
+    <head>
+        <h1><%=title%></h1>
+    </head>
+    <div role="main">
+        <p><%-content %></p>
+        <div id="blog-form">
+            <form action="/edit" method="post">
+                <p>
+                title:<br>
+                <input type="text" name="blogtitle" value="<%=blogtitle%>"><br>
+                text: <br>
+                <textarea name="blogtext" rows="4" cols="40"><%=blogtext%></textarea><br>
+                <input type="submit" value="submit">
+                </p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

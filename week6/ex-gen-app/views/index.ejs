@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title><%=title%></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+</head>
+<body> 
+    <head>
+        <h1><%=title%></h1>
+    </head>
+    <div role="main">
+        <p><%-content %></p>
+        <div id="blog-form">
+            <form action="/" method="post">
+            <input type="submit" value="Add a Blog">
+            </form>
+        </div>
+        <br><br>
+        <div id="blog-table">
+            <p><table style="width:85%;">
+                <% for(var key in pages) { %>
+                    <%-include('pages.ejs', {link:{href:"/blogs/"+key, text:key}, preview: pages[key]}) %>
+                <% } %>
+                </table>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

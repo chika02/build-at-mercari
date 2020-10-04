@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title><%=title%></title>
+    <link type="text/css" href="./styles.css" rel="stylesheet">
+</head>
+<body> 
+    <head>
+        <h1><%=title%></h1>
+    </head>
+    <div role="main">
+        <p><%-content %></p>
+    </div>
+    <div id="edit-form">
+        <form action="<%='/blogs/'+title%>" method="post">
+        <input type="submit" name="edit" value="Edit">
+        <input type="submit" name="delete" value="Delete">
+        </form>
+    </div>
+</body>
+</html>
